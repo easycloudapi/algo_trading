@@ -4,21 +4,26 @@
 
 ## Info:
 1. Version: 1.0.0
+2. Test Pypi Link: https://test.pypi.org/project/smart-algo-trading
+3. Pypi Link: https://pypi.org/project/smart-algo-trading
+4. Bug/Issue Tracker (GitHub): https://github.com/easycloudapi/smart_algo_trading/issues
+5. Discussion (GitHub): https://github.com/easycloudapi/smart_algo_trading/discussions
+6. Repository (GitHub): https://github.com/easycloudapi/smart_algo_trading
 
 ## Module Details:
 
-| ID | Module Name | Module Description  | Sample COde |
-|---|---|---|---|
-| 1. | | | |
-| | | | |
+| ID | Package Name | Module Name | Import The Module | Description
+| --- | --- | --- | --- | --- |
+| 1. | ind_equity_derivatives | nse_data | from ind_equity_derivatives.nse_data import NSEData | Fetch equity and options data |
+| | | | | |
 
 
-## Sample Code:
+## Sample Code (`NSE Company Symbols`):
 ```shell
-from ind_equity_derivatives.nse_data import NSEIndia
+from ind_equity_derivatives.nse_data import NSEData
 
-nseindia = NSEIndia()
-out1 = nseindia.get_nse_company_symbols()
+nsedata = NSEData()
+out1 = nsedata.get_nse_company_symbols()
 print(out1)
 ```
 

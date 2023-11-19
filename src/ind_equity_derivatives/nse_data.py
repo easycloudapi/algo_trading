@@ -1,13 +1,13 @@
-"""get_nse_data
+"""nse_data
 
-All NSE Apis
+All NSE data
 """
 
 import requests
 import json
 
 
-class NSEIndia():
+class NSEData():
     def __init__(self):
         """NSEIndia, init method
         """
@@ -68,8 +68,8 @@ class NSEIndia():
     
     
 if __name__ == "__main__":
-    nseindia = NSEIndia()
-    out1 = nseindia.get_nse_company_symbols()
+    nsedata = NSEData()
+    out1 = nsedata.get_nse_company_symbols()
     print(out1)
-    # out2 = nseindia.get_nse_optionchain_symbol(symbol="NIFTY")
+    # out2 = nsedata.get_nse_optionchain_symbol(symbol="NIFTY")
     # print(out2)

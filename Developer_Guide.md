@@ -100,3 +100,10 @@
 	```shell
 	# sample code
 	```
+
+
+## Git Error due to changing the repo name, required permission again (*solved*):
+	```shell
+	git remote -v
+	git remote set-url origin https://easycloudapi@github.com/easycloudapi/smart_algo_trading.git
+	```
