@@ -6,14 +6,14 @@
 	2. git bash (source url: https://git-scm.com/downloads)
 	3. vscode (IDE) (source url: https://code.visualstudio.com/)
 	
-2. Clone the `algo_trading` from github repo -
+2. Clone the `smart_algo_trading` from github repo -
 	```shell
-	git clone https://github.com/easycloudapi/algo_trading.git
+	git clone https://github.com/easycloudapi/smart_algo_trading.git
     ```
 
 3. Open and goto working directory path by below command in **powershell terminal** -
 	```shell
-	cd .\algo_trading\
+	cd .\smart_algo_trading\
 	```
 	
 4. Create and activate the Python Virtual Environment -
