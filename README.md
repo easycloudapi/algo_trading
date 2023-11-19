@@ -1,5 +1,6 @@
-# Algo_Trading
+# Smart Algo Trading
 > Simple and smart Algo Trading module to build robust and scalable application
+
 > Help Coders and Traders to build own strategies and earn 
 
 ## Info:
