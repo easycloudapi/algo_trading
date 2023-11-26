@@ -40,7 +40,7 @@
 	```
 
 6. Follow the below package development steps -
-	1. Write module code inside ".\src\\<package\>"
+	1. Write module code inside ".\src\sat\\<package\>"
 
 
 7. Configure to build the package locally (from ".\algo_trading\" dir) -
@@ -93,7 +93,7 @@
 	py -m twine upload --skip-existing --repository testpypi dist/*
 
 	# move the built package to pypi
-	twine upload dist/*
+	twine upload --skip-existing dist/*
 	```
 
 ## Execute the code for Stock Market Data and Analysis:
@@ -101,8 +101,9 @@
 	# sample code
 	```
 
+## Solved the errors-
 
-## Git Error due to changing the repo name, required permission again (*solved*):
+### 1. Git Error due to changing the repo name, required permission again (*solved*):
 	```shell
 	git remote -v
 	git remote set-url origin https://easycloudapi@github.com/easycloudapi/smart_algo_trading.git

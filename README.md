@@ -14,15 +14,15 @@
 
 ## Package and Module Details:
 
-| ID | Package Name | Module Name | Import The Module | Description
-| :--- | :--- | --- | :---: | :--- |
-| 1. | ind_equity_derivatives | nse_data | `from ind_equity_derivatives.nse_data import NSEData` | Fetch equity and options data |
-| | | | | |
+| ID | Package Name | Module Name | Description
+| :--- | :--- | --- | :--- |
+| 1. | sat.ind_equity_derivatives | nse_data | Fetch equity and options data |
+| | | | |
 
 
 ## Sample Code (`NSE Company Symbols`):
 ```shell
-from ind_equity_derivatives.nse_data import NSEData
+from sat.ind_equity_derivatives.nse_data import NSEData
 
 nsedata = NSEData()
 out1 = nsedata.get_nse_company_symbols()
@@ -31,10 +31,19 @@ print(out1)
 
 ## Sample Code (`NSE optionchain data for Nifty`):
 ```shell
-from ind_equity_derivatives.nse_data import NSEData
+from sat.ind_equity_derivatives.nse_data import NSEData
 
 nsedata = NSEData()
-out2 = nsedata.get_nse_optionchain_symbol(symbol="NIFTY")
+out2 = nsedata.get_nse_optionchain_data(symbol="NIFTY")
+print(out2)
+```
+
+## Sample Code (`NSE equitystock data for Nifty`):
+```shell
+from sat.ind_equity_derivatives.nse_data import NSEData
+
+nsedata = NSEData()
+out2 = nsedata.get_nse_equitystock_data(index="NIFTY")
 print(out2)
 ```
 
